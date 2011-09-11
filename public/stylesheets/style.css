@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul li.offline { color : red;}
+ul li.online { color : green;}
+
+.dot {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  color: white;
+  text-align:center;
+  background-color:#002EBE;
+  position: absolute;
+  opacity: .7;
+}

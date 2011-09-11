@@ -1,0 +1,15 @@
+h1 Login
+#content
+  p
+    | Please login or go 
+    a(href='/signup') here
+    |  to create a new account.
+  form(method="post", action="/login")
+    p
+      label Username:
+        input(type='text', name='username')
+    p
+      label Password:
+        input(type='password', name='password')
+    P
+      input(type='submit', value='send')

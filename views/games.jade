@@ -1,0 +1,20 @@
+include mixins/users
+
+h1= title
+h2 Clients
+ul#clients
+hr
+h2 Sessions
+ul#session
+hr
+h2 Users
+ul#users
+hr
+h2 Games
+- each game in games
+  li
+    a(href='games/#{game.id}')= game.name
+<hr>
+p 
+  //a(href='javascript:socket.emit("disconnectAll");') Disconnect All
+  a(href='/logout') Logout
